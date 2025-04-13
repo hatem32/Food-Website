@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Main Dishes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar" style="height: 60px; "></div>
+    <script>
+        fetch("../../navbar/navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+    <div class="header">
+        <div class="overlay"></div>
+        
+        
+        <div class="header-content">
+            <h1 class="header-title">Main Dishes</h1>
+            <div class="breadcrumb">Home / Main Dishes</div>
+        </div>
+        
+       
+    </div>
+    
+    <div class="search-section">
+        <input type="text" class="search-bar" placeholder="Search main dishes...">
+        <button class="search-btn">Search</button>
+    </div>
+    
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <span class="recipe-badge">Chef's Pick</span>
+            <img src="../../image/842163.jpg" alt="Beef Steak">
+            <a href="../../details/details.html" class="recipe-title">Grilled Beef Steak</a>
+        </div>
+        <div class="recipe-card">
+            <span class="recipe-badge">Popular</span>
+            <img src="../../image/1324467.png" alt="Chicken Curry">
+            <a href="../../details/details.html" class="recipe-title">Chicken Curry</a>
+        </div>
+        <div class="recipe-card">
+            <img src="../../image/1308370.jpg" alt="Pasta">
+            <a href="../../details/details.html" class="recipe-title"> Pasta</a>
+        </div>
+        <div class="recipe-card">
+            <span class="recipe-badge">New</span>
+            <img src="../../image/1288020.jpg" alt="Salmon">
+            <a href="../../details/details.html" class="recipe-title">Grilled Salmon</a>
+        </div>
+    </div>
+
+    <button class="back-btn" onclick="window.history.back()">←</button>
+
+</body>
+</html>

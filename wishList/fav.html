@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fav.css">
+  <title>Favorite Recipes</title>
+</head>
+<body>
+
+    <div id="navbar" style="height: 60px;"></div>
+    <script>
+        fetch("../navbar/navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+
+  <div class="fav-title">Your Favorite <span>Recipes</span> </div>
+  <div class="fav-grid">
+
+    <div class="fav-card">
+      <button class="remove-fav" title="Remove from favorites">❤️</button>
+      <img src="../image/816909.jpg" alt="Berry Smoothie" />
+      <div class="fav-content">
+        <a href="../details/details.html" class="fav-title-text">Berry Smoothie</a>
+        <p class="fav-description">A refreshing blend of mixed berries, yogurt, and a touch of honey, perfect for a healthy boost!</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+
+    <div class="fav-card">
+      <button class="remove-fav" title="Remove from favorites">❤️</button>
+      <img src="../image/9a36fec0b2a1ea95644bf2bdc0c9bc24.jpg" alt="White Chocolate Blueberry Cupcakes">
+      <div class="fav-content">
+        <a href="../details/details.html" class="fav-title-text">White Chocolate Blueberry Cupcakes</a>
+        <p class="fav-description">Fluffy cupcakes filled with the richness of white chocolate and the sweetness of blueberries.</p>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+
+    <div class="fav-card">
+      <button class="remove-fav" title="Remove from favorites">❤️</button>
+      <img src="../image/exps179920_SD153208D08_20_4b.jpg" alt="Stuffed Mushrooms">
+      <div class="fav-content">
+        <a href="../details/details.html" class="fav-title-text">Stuffed Mushrooms</a>
+        <p class="fav-description">Elegant and creamy mushrooms stuffed with a delightful blend of cheese and herbs.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+
+    <div class="fav-card">
+      <button class="remove-fav" title="Remove from favorites">❤️</button>
+      <img src="../image/1288020.jpg" alt="Salmon">
+      <div class="fav-content">
+        <a href="../details/details.html" class="fav-title-text">Salmon</a>
+        <p class="fav-description">A perfect balance of crispy skin and tender, juicy salmon fillets.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

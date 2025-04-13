@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Nerko+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+        }
+
+        section nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            left: 0;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        section nav .logo img {
+            width: 100px;
+            cursor: pointer;
+            margin: 7px 0;
+        }
+
+        section nav ul {
+            list-style: none;
+        }
+
+        section nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        section nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            font-size: 17px;
+            transition: 0.1s;
+        }
+
+        section nav ul li a::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background: #fac031;
+            display: block;
+            transition: 0.2s linear;
+        }
+
+        section nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        section nav ul li a:hover {
+            color: #fac031;
+        }
+
+        section nav .icon i {
+            font-size: 18px;
+            color: #000;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        section nav .icon i:hover {
+            color: #fac031;
+        }
+        section label{
+            font-weight: 300;
+            font-size: 16px;
+            color: #000;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            padding-left: 100px;
+
+        }
+
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 0px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dropdown-btn:hover {
+            background-color: #f0f0f0;
+            transition: 0.2s linear;
+        }
+
+        .dropdown-btn svg {
+            margin-right: 8px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 70px;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content button {
+            width: 100%;
+            background-color: #fac031;
+            color: white;
+            padding: 10px;
+            border-radius: 70px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content button:hover {
+            background-color: #cc9407;
+        }
+
+        .dropdown-content a {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            transition: background 0.3s;
+        }
+
+        .dropdown-content a:last-child:hover {
+            background-color: #f0f0f0;
+
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+
+        }
+
+        .dropdown-content a svg {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="/Food Website/image/logo.png" onclick="window.location.href='/Food Website/index.html'">
+            </div>
+
+            <ul>
+                <li><a href="/Food Website/index.html">Home</a></li>
+                <li><a href="/Food Website/index.html#About">About</a></li>
+                <li><a href="/Food Website/index.html#Gallary">Category</a></li>
+                <li><a href="/Food Website/web-List/list pages/List-user.html">All Recipes</a></li>
+                <li><a href="/Food Website/contact_us/contact_us.html">Contact Us</a></li>
+                <li><a href="/Food Website/dashboard/dashBoard.html">Dashboard</a></li>
+            </ul>
+
+
+            <div class="icon">
+                <div class="dropdown">
+                    <!-- Account Button -->
+                    <label for="dropdown-toggle" class="dropdown-btn">
+                        <i class="fa-solid fa-user"></i>
+                        Account
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </label>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-content">
+                        <a href="../login-signup/login.html">
+                            <button>Log in</button>
+                        </a>
+                        <a href="../login-signup/sign.html">
+                            <button>Sign up</button>
+                        </a>
+                        <a href="../MyProfile/index.html">
+                            <i class="fa-solid fa-user"></i>
+                            My Account
+                        </a>
+
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="../wishList/fav.html"><i class="fa-solid fa-heart"></i></a>
+
+            </div>
+
+        </nav>
+    </section>
+</body>
+
+</html>

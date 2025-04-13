@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div id="navbar" style="height: 60px;"></div>
+    <script>
+        fetch("../../navbar/navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+    <main >
+        <h1>All<span>Recipes</span></h1>
+        <div class="recipe-list">
+            <div class="recipe-item">
+                <h2>Spaghetti Carbonaara</h2>
+                <img src="../images/carbonara-horizontal-threeByTwoMediumAt2X-v2.jpg" >
+                
+                <p><strong>Course:</strong> Main Course</p>
+                <p><strong>Ingredients:</strong> Spaghetti, Eggs, Parmesan, Bacon</p>
+                <p><strong>Description:</strong> A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                <a href="../../details/details.html" class="btn">View Details</a>  
+            </div>
+
+            <div class="recipe-item">
+                <h2>Chocolate Cake</h2>
+                <img src="../images/chocolate cake.jpeg">
+                <p><strong>Course:</strong> Dessert</p>
+                <p><strong>Ingredients:</strong> Flour, Cocoa, Sugar, Eggs</p>
+                <p><strong>Description:</strong> A rich and moist chocolate cake perfect for any occasion.</p>
+                <a href="../../details/details.html" class="btn">View Details</a>
+            </div>
+            <div class="recipe-item">
+                <h2>Caprese Salad</h2>
+                <img src="../images/caprese salad.jpg" alt="Caprese Salad">
+                <p><strong>Course:</strong> Appetizer</p>
+                <p><strong>Ingredients:</strong> Tomatoes, Mozzarella, Basil, Olive Oil</p>
+                <p><strong>Description:</strong> A fresh and simple Italian salad with vibrant flavors and creamy mozzarella.</p>
+                <a href="../../details/details.html" class="btn">View Details</a>
+              </div>
+              <div class="recipe-item">
+                <h2>Butter Chicken</h2>
+                <img src="../images/butter chicken.jpg" alt="Butter Chicken">
+                <p><strong>Course:</strong> Main</p>
+                <p><strong>Ingredients:</strong> Chicken, Tomato, Cream, Spices</p>
+                <p><strong>Description:</strong> A rich and creamy Indian dish full of flavor with tender chicken pieces.</p>
+                <a href="../../details/details.html" class="btn">View Details</a>
+              </div>
+            
+              <div class="recipe-item">
+                <h2>Vanilla Cupcakes</h2>
+                <img src="../images/vanilla cupcake.jpg" alt="Vanilla Cupcakes">
+                <p><strong>Course:</strong> Dessert</p>
+                <p><strong>Ingredients:</strong> Flour, Sugar, Eggs, Vanilla, Butter</p>
+                <p><strong>Description:</strong> Soft and fluffy cupcakes with classic vanilla flavor, topped with buttercream frosting.</p>
+                <a href="../../details/details.html" class="btn">View Details</a>
+                
+              </div>
+              
+              <div class="recipe-item">
+                <h2>Ramen Noodles</h2>
+                <img src="../images/ramen.jpg" alt="Ramen Noodles">
+                <p><strong>Course:</strong> Main</p>
+                <p><strong>Ingredients:</strong> Noodles, Broth, Egg, Green Onion, Pork</p>
+                <p><strong>Description:</strong> A hearty and flavorful Japanese noodle soup with savory broth and toppings.</p>
+                <a href="../../details/details.html" class="btn">View Details</a>
+                
+              </div>
+              
+        </div>
+    </main>
+
+</body>
+</html>
