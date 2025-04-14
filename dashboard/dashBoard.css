@@ -1,0 +1,222 @@
+body {
+    background: url("../image/bg1.jpg") no-repeat center center fixed;
+    font-family: sans-serif;
+    margin: 0px;
+}
+/* ---------------------------------------navbar---------------------------------------- */
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 10vh;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+section nav .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after {
+    width: 100%;
+}
+
+section nav ul li a:hover {
+    color: #fac031;
+}
+
+section nav .icon i {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover {
+    color: #fac031;
+}
+section label{
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 100px;
+
+}
+
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-btn:hover {
+    background-color: #f0f0f0;
+    transition: 0.2s linear;
+}
+
+.dropdown-btn svg {
+    margin-right: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 70px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content button {
+    width: 100%;
+    background-color: #fac031;
+    color: white;
+    padding: 10px;
+    border-radius: 70px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #cc9407;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:last-child:hover {
+    background-color: #f0f0f0;
+
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+
+}
+
+.dropdown-content a svg {
+    margin-right: 8px;
+}
+
+
+
+/* ---------------------------------------navbar---------------------------------------- */
+h1 {
+    font-family: "Pacifico", cursive;
+    color: #333;
+    margin-bottom: 20px;
+}
+.all{
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+#search {  
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+td, th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.add {
+    margin-top: 20px;
+}
+.add a {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #FAC031;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.actions a {
+    display: inline-block;
+    margin-right: 10px;
+    color: green;
+    text-decoration: none;
+}
+.actions .delete {
+    display: inline-block;
+    margin-right: 10px;
+    color: red;
+    text-decoration: none;
+}
