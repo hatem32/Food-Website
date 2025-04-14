@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe List</title>
+  <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Nerko+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+  <section>
+    <nav>
+      <div class="logo">
+        <img src="../../image/logo.png" onclick="window.location.href='../../index.html'">
+      </div>
+
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#About">About</a></li>
+        <li><a href="../../index.html#Gallary">Category</a></li>
+        <li><a href="../../web-List/list pages/List-user.html">All Recipes</a></li>
+        <li><a href="../../contact_us/contact_us.html">Contact Us</a></li>
+        <li><a href="../../dashboard/dashBoard.html">Dashboard</a></li>
+      </ul>
+
+
+      <div class="icon">
+        <div class="dropdown">
+          <!-- Account Button -->
+          <label for="dropdown-toggle" class="dropdown-btn">
+            <i class="fa-solid fa-user"></i>
+            Account
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </label>
+
+          <!-- Dropdown Menu -->
+          <div class="dropdown-content">
+            <a href="../../login-signup/login.html">
+              <button>Log in</button>
+            </a>
+            <a href="../../login-signup/sign.html">
+              <button>Sign up</button>
+            </a>
+            <hr>
+            <a href="../../MyProfile/index.html">
+              <i class="fa-solid fa-user"></i>
+              My Account
+            </a>
+
+          </div>
+        </div>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="../../wishList/fav.html"><i class="fa-solid fa-heart"></i></a>
+
+      </div>
+
+    </nav>
+  </section>
+  <main>
+    <h1>All<span>Recipes</span></h1>
+    <div class="recipe-list">
+      <div class="recipe-item">
+        <h2>Spaghetti Carbonaara</h2>
+        <img src="../images/carbonara-horizontal-threeByTwoMediumAt2X-v2.jpg">
+
+        <p><strong>Course:</strong> Main Course</p>
+        <p><strong>Ingredients:</strong> Spaghetti, Eggs, Parmesan, Bacon</p>
+        <p><strong>Description:</strong> A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+        <a href="../../details/details.html" class="btn">View Details</a>
+      </div>
+
+      <div class="recipe-item">
+        <h2>Chocolate Cake</h2>
+        <img src="../images/chocolate cake.jpeg">
+        <p><strong>Course:</strong> Dessert</p>
+        <p><strong>Ingredients:</strong> Flour, Cocoa, Sugar, Eggs</p>
+        <p><strong>Description:</strong> A rich and moist chocolate cake perfect for any occasion.</p>
+        <a href="../../details/details.html" class="btn">View Details</a>
+      </div>
+      <div class="recipe-item">
+        <h2>Caprese Salad</h2>
+        <img src="../images/caprese salad.jpg" alt="Caprese Salad">
+        <p><strong>Course:</strong> Appetizer</p>
+        <p><strong>Ingredients:</strong> Tomatoes, Mozzarella, Basil, Olive Oil</p>
+        <p><strong>Description:</strong> A fresh and simple Italian salad with vibrant flavors and creamy mozzarella.
+        </p>
+        <a href="../../details/details.html" class="btn">View Details</a>
+      </div>
+      <div class="recipe-item">
+        <h2>Butter Chicken</h2>
+        <img src="../images/butter chicken.jpg" alt="Butter Chicken">
+        <p><strong>Course:</strong> Main</p>
+        <p><strong>Ingredients:</strong> Chicken, Tomato, Cream, Spices</p>
+        <p><strong>Description:</strong> A rich and creamy Indian dish full of flavor with tender chicken pieces.</p>
+        <a href="../../details/details.html" class="btn">View Details</a>
+      </div>
+
+      <div class="recipe-item">
+        <h2>Vanilla Cupcakes</h2>
+        <img src="../images/vanilla cupcake.jpg" alt="Vanilla Cupcakes">
+        <p><strong>Course:</strong> Dessert</p>
+        <p><strong>Ingredients:</strong> Flour, Sugar, Eggs, Vanilla, Butter</p>
+        <p><strong>Description:</strong> Soft and fluffy cupcakes with classic vanilla flavor, topped with buttercream
+          frosting.</p>
+        <a href="../../details/details.html" class="btn">View Details</a>
+
+      </div>
+
+      <div class="recipe-item">
+        <h2>Ramen Noodles</h2>
+        <img src="../images/ramen.jpg" alt="Ramen Noodles">
+        <p><strong>Course:</strong> Main</p>
+        <p><strong>Ingredients:</strong> Noodles, Broth, Egg, Green Onion, Pork</p>
+        <p><strong>Description:</strong> A hearty and flavorful Japanese noodle soup with savory broth and toppings.</p>
+        <a href="../../details/details.html" class="btn">View Details</a>
+
+      </div>
+
+    </div>
+  </main>
+
+</body>
+
+</html>
