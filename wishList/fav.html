@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Nerko+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./fav.css">
+  <title>Favorite Recipes</title>
+</head>
+<body>
+
+   <section>
+        <nav>
+            <div class="logo">
+                <img src="../image/logo.png" onclick="window.location.href='../index.html'">
+            </div>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#About">About</a></li>
+                <li><a href="../index.html#Gallary">Category</a></li>
+                <li><a href="../web-List/list pages/List-user.html">All Recipes</a></li>
+                <li><a href="../contact_us/contact_us.html">Contact Us</a></li>
+                <li><a href="../dashboard/dashBoard.html">Dashboard</a></li>
+            </ul>
+
+
+            <div class="icon">
+                <div class="dropdown">
+                    <!-- Account Button -->
+                    <label for="dropdown-toggle" class="dropdown-btn">
+                        <i class="fa-solid fa-user"></i>
+                        Account
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </label>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-content">
+                        <a href="../login-signup/login.html">
+                            <button>Log in</button>
+                        </a>
+                        <a href="../login-signup/sign.html">
+                            <button>Sign up</button>
+                        </a>
+                        <hr>
+                        <a href="../MyProfile/index.html">
+                            <i class="fa-solid fa-user"></i>
+                            My Account
+                        </a>
+
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="../wishList/fav.html"><i class="fa-solid fa-heart"></i></a>
+
+            </div>
+
+        </nav>
+    </section>
+
+  <div class="fav-title">Your Favorite <span>Recipes</span> </div>
+  <div class="fav-grid">
+
+    <div class="fav-card">
+      <button class="remove-fav" title="Remove from favorites">❤️</button>
+      <img src="../image/816909.jpg" alt="Berry Smoothie" />
+      <div class="fav-content">
+        <a href="../details/details.html" class="fav-title-text">Berry Smoothie</a>
+        <p class="fav-description">A refreshing blend of mixed berries, yogurt, and a touch of honey, perfect for a healthy boost!</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+
+    <div class="fav-card">
+      <button class="remove-fav" title="Remove from favorites">❤️</button>
+      <img src="../image/9a36fec0b2a1ea95644bf2bdc0c9bc24.jpg" alt="White Chocolate Blueberry Cupcakes">
+      <div class="fav-content">
+        <a href="../details/details.html" class="fav-title-text">White Chocolate Blueberry Cupcakes</a>
+        <p class="fav-description">Fluffy cupcakes filled with the richness of white chocolate and the sweetness of blueberries.</p>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+
+    <div class="fav-card">
+      <button class="remove-fav" title="Remove from favorites">❤️</button>
+      <img src="../image/exps179920_SD153208D08_20_4b.jpg" alt="Stuffed Mushrooms">
+      <div class="fav-content">
+        <a href="../details/details.html" class="fav-title-text">Stuffed Mushrooms</a>
+        <p class="fav-description">Elegant and creamy mushrooms stuffed with a delightful blend of cheese and herbs.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+
+    <div class="fav-card">
+      <button class="remove-fav" title="Remove from favorites">❤️</button>
+      <img src="../image/1288020.jpg" alt="Salmon">
+      <div class="fav-content">
+        <a href="../details/details.html" class="fav-title-text">Salmon</a>
+        <p class="fav-description">A perfect balance of crispy skin and tender, juicy salmon fillets.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
