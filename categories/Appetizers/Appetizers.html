@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food - Appetizers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="../../image/logo.png" onclick="window.location.href='../../index.html'">
+            </div>
+
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#About">About</a></li>
+                <li><a href="../../index.html#Gallary">Category</a></li>
+                <li><a href="../../web-List/list pages/List-user.html">All Recipes</a></li>
+                <li><a href="../../contact_us/contact_us.html">Contact Us</a></li>
+                <li><a href="../../dashboard/dashBoard.html">Dashboard</a></li>
+            </ul>
+
+
+            <div class="icon">
+                <div class="dropdown">
+                    <!-- Account Button -->
+                    <label for="dropdown-toggle" class="dropdown-btn">
+                        <i class="fa-solid fa-user"></i>
+                        Account
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </label>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-content">
+                        <a href="../../login-signup/login.html">
+                            <button>Log in</button>
+                        </a>
+                        <a href="../../login-signup/sign.html">
+                            <button>Sign up</button>
+                        </a>
+                        <hr>
+                        <a href="../../MyProfile/index.html">
+                            <i class="fa-solid fa-user"></i>
+                            My Account
+                        </a>
+
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="../../wishList/fav.html"><i class="fa-solid fa-heart"></i></a>
+
+            </div>
+
+        </nav>
+    </section>
+    <div class="header">
+        <div class="overlay"></div>
+        <div class="logo" onclick="window.location.href='index.html'">
+        </div>
+        
+        <div class="header-content">
+            <h1 class="header-title">Appetizers</h1>
+            <div class="breadcrumb">Home / Appetizers</div>
+        </div>
+    
+    </div>
+    
+    <div class="search-section">
+        <input type="text" class="search-bar" placeholder="Search appetizers...">
+        <button class="search-btn">Search</button>
+    </div>
+    
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <span class="recipe-badge">Popular</span>
+            <img src="../../image/tomato-and-basil-bruschetta-75254-1.jpeg" alt="Bruschetta">
+            <a href="../../details/details.html" class="recipe-title">Tomato Bruschetta</a>
+        </div>
+        <div class="recipe-card">
+            <span class="recipe-badge">New</span>
+            <img src="../../image/1297884.jpg" alt="Spring Rolls">
+            <a href="../../details/details.html" class="recipe-title">Vegetable Salad</a>
+        </div>
+        <div class="recipe-card">
+            <img src="../../image/exps179920_SD153208D08_20_4b.jpg" alt="Stuffed Mushrooms">
+            <a href="../../details/details.html" class="recipe-title">Stuffed Mushrooms</a>
+        </div>
+        <div class="recipe-card">
+            <span class="recipe-badge">Trending</span>
+            <img src="../../image/Simple-Italian-Salad_EXPS_FT20_25957_F_0624_1-1.jpg" alt="Chicken Wings">
+            <a href="../../details/details.html" class="recipe-title"> Italian Salad</a>
+        </div>
+    </div>
+
+    <button class="back-btn" onclick="window.history.back()">←</button>
+
+</body>
+</html>

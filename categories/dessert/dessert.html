@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food - dessert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="../../image/logo.png" onclick="window.location.href='../../index.html'">
+            </div>
+
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#About">About</a></li>
+                <li><a href="../../index.html#Gallary">Category</a></li>
+                <li><a href="../../web-List/list pages/List-user.html">All Recipes</a></li>
+                <li><a href="../../contact_us/contact_us.html">Contact Us</a></li>
+                <li><a href="../../dashboard/dashBoard.html">Dashboard</a></li>
+            </ul>
+
+
+            <div class="icon">
+                <div class="dropdown">
+                    <!-- Account Button -->
+                    <label for="dropdown-toggle" class="dropdown-btn">
+                        <i class="fa-solid fa-user"></i>
+                        Account
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </label>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-content">
+                        <a href="../../login-signup/login.html">
+                            <button>Log in</button>
+                        </a>
+                        <a href="../../login-signup/sign.html">
+                            <button>Sign up</button>
+                        </a>
+                        <hr>
+                        <a href="../../MyProfile/index.html">
+                            <i class="fa-solid fa-user"></i>
+                            My Account
+                        </a>
+
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="../../wishList/fav.html"><i class="fa-solid fa-heart"></i></a>
+
+            </div>
+
+        </nav>
+    </section>
+    <div class="header">
+        <div class="overlay"></div>
+       
+        
+        <div class="header-content">
+            <h1 class="header-title">Dessert</h1>
+            <div class="breadcrumb">Home / Dessert</div>
+        </div>
+        
+       
+    </div>
+    
+    <div class="search-section">
+        <input type="text" class="search-bar" placeholder="What are you looking for?">
+        <button class="search-btn">Search</button>
+    </div>
+    
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            
+            <span class="recipe-badge">Popular</span>
+            
+            <img src="../../image/3dd0925c9d2c906f2a50b5528314542f.jpg" alt="Chocolate Cake">
+            <a href="../../details/details.html" class="recipe-title">Chocolate Cake</a>
+        </div>
+        <div class="recipe-card">
+            <span class="recipe-badge">New</span>
+            <img src="../../image/9a36fec0b2a1ea95644bf2bdc0c9bc24.jpg" alt="White Chocolate Blueberry Cupcakes">
+            <a href="../../details/details.html" class="recipe-title">White Chocolate Blueberry Cupcakes</a>
+        </div>
+        <div class="recipe-card">
+            
+            <img src="../../image/e73a3a85447067270d419378249bc32e.jpg" alt="Red Velvet Cake">
+            <a href="../../details/details.html" class="recipe-title">Red Velvet Cake</a>
+        </div>
+        <div class="recipe-card">
+            <span class="recipe-badge">Trending</span>
+            <img src="../../image/1133a7302f65a10d38995446be3e07ac.jpg" alt="Double Chocolate Chip Cookies">
+            <a href="../../details/details.html" class="recipe-title">Double Chocolate Chip Cookies</a>
+        </div>
+    </div>
+
+    <button class="back-btn" onclick="window.history.back()">←</button>
+
+</body>
+</html>
